@@ -70,6 +70,10 @@ h1 { margin: 0; max-width: 760px; font-size: clamp(3.45rem,7.1vw,6.7rem); line-h
 .project-card ul { display: grid; gap: 10px; padding: 0; margin: 24px 0 0; list-style: none; }
 .project-card li { display: flex; align-items: flex-start; gap: 10px; color: #365567; font-size: .9rem; }
 .project-card li svg { flex: 0 0 auto; color: var(--blue); margin-top: 2px; }
+.project-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 25px; }
+.project-actions a { display: inline-flex; align-items: center; gap: 7px; padding: 10px 13px; border: 1px solid var(--border); color: var(--ink); font-size: .78rem; font-weight: 750; transition: background .2s ease, color .2s ease; }
+.project-actions a:first-child { background: var(--blue); border-color: var(--blue); color: white; }
+.project-actions a:hover { background: var(--ink); border-color: var(--ink); color: white; }
 .skills-section { max-width: none; padding-left: max(32px,calc((100vw - 1176px)/2)); padding-right: max(32px,calc((100vw - 1176px)/2)); background: var(--ink); color: white; }
 .skill-grid { display: grid; grid-template-columns: repeat(3,1fr); border-left: 1px solid rgba(255,255,255,.17); border-top: 1px solid rgba(255,255,255,.17); }
 .skill-item { min-height: 205px; padding: 28px; border-right: 1px solid rgba(255,255,255,.17); border-bottom: 1px solid rgba(255,255,255,.17); }

@@ -25,6 +25,8 @@ const projects = [
   {
     number: '01', title: 'Hostel Laundry Management System',
     tags: ['MySQL', 'Web Development', 'SDLC'],
+    liveUrl: 'https://hostel-laundry-management-system-production.up.railway.app/',
+    sourceUrl: 'https://github.com/fayeholic/hostel-laundry-management-system',
     description: 'A web-based system that brings laundry bookings and complaint handling into one practical workflow for hostel residents and administrators.',
     points: ['Designed the MySQL database for users, machines, bookings and complaints.', 'Diagnosed application and database issues in a collaborative Waterfall SDLC process.'],
   },
@@ -33,12 +35,14 @@ const projects = [
     tags: ['Linux', 'Kali Linux', 'VirtualBox'],
     description: 'Hands-on system administration practice focused on reliable day-to-day operations and structured troubleshooting.',
     points: ['Managed users, groups, permissions, processes and services.', 'Used command-line tools for monitoring, networking and troubleshooting.'],
+    liveUrl: '', sourceUrl: '',
   },
   {
     number: '03', title: 'Python Programming Projects',
     tags: ['Python', 'Problem Solving'],
     description: 'A collection of small applications built to strengthen programming foundations and debugging discipline.',
     points: ['Applied functions, loops, lists, dictionaries and file handling.', 'Focused on readable logic, debugging and practical problem-solving.'],
+    liveUrl: '', sourceUrl: '',
   },
 ];
 
@@ -99,6 +103,10 @@ export default function Home() {
               <div className="tag-row">{project.tags.map((tag) => <span key={tag}>{tag}</span>)}</div>
               <h3>{project.title}</h3><p>{project.description}</p>
               <ul>{project.points.map((point) => <li key={point}><CheckCircle2 size={16} />{point}</li>)}</ul>
+              {project.liveUrl && <div className="project-actions">
+                <a href={project.liveUrl} target="_blank" rel="noreferrer">View live project <ArrowUpRight size={16} /></a>
+                <a href={project.sourceUrl} target="_blank" rel="noreferrer">View source code <ArrowUpRight size={16} /></a>
+              </div>}
             </div>
           </article>)}
         </div>
