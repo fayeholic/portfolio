@@ -88,7 +88,7 @@ export default function Home() {
       <section className="about-grid section" id="about">
         <div className="section-label">01 / About</div>
         <div className="about-copy">
-          <h2>Curious about how systems work—and how to make them work better.</h2>
+          <h2>Curious about how systems work and how to make them work better.</h2>
           <p>I enjoy moving between code, databases and operating systems to understand problems from more than one angle. My academic work and industry programmes have built a foundation in technical support, application troubleshooting, cybersecurity, AI and 5G.</p>
           <p>I&apos;m now looking for an IT internship where I can contribute, learn from experienced teams and turn classroom knowledge into dependable real-world solutions.</p>
         </div>
